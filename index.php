@@ -21,24 +21,40 @@ include __DIR__ . "/database/data.php";
 
 <body>
 
+    <!-- HEADER -->
     <header class="container-fluid">
         <div class="logo-img">
             <img src="./img/spotify-logo.png">
         </div>
     </header>
+    <!-- / HEADER -->
 
-     <main class="container-fluid">
-        <div class="container container-cards">
 
-            <?php 
-                foreach ($disks as $disk) { 
-                    var_dump($disk);
-                } 
+
+    <!-- MAIN -->
+    <main class="container-fluid">
+        <div class="container container-cards d-flex flex-wrap pt-5">
+
+            <!-- php -->
+            <?php
+            foreach ($disks as $disk) {
+                echo
+                "<div class='card text-center mb-3'>
+                        <div class='img'>
+                            <img class='img-fluid' src='{$disk['poster']}' >
+                        </div>
+                        <div class='text text-light'>
+                            <h5 class='text-uppercase fw-bold fs-6 mt-3'>{$disk['title']}</h5>
+                            <p class='text-secondary'>{$disk['author']} <br>
+                            {$disk['year']}</p>
+                        </div>
+                </div>";
+            }
             ?>
-                
-        </div> 
+            <!-- / php -->
+        </div>
     </main>
-
+    <!-- / MAIN -->
 
 
 </body>

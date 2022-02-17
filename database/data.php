@@ -1,3 +1,6 @@
+<!-- creo il mio array multidimensionale con i data -->
+
+
 <?php
 
 $disks = [

@@ -21,9 +21,23 @@ include __DIR__ . "/database/data.php";
 
 <body>
 
-    <header></header>
+    <header class="container-fluid">
+        <div class="logo-img">
+            <img src="./img/spotify-logo.png">
+        </div>
+    </header>
 
-    <main>TEST CIAO</main>
+     <main class="container-fluid">
+        <div class="container container-cards">
+
+            <?php 
+                foreach ($disks as $disk) { 
+                    var_dump($disk);
+                } 
+            ?>
+                
+        </div> 
+    </main>
 
 
 

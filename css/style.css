@@ -1,0 +1,50 @@
+/* HEADER */
+
+header{
+    background-color: #2E3A46;
+}   
+
+.logo-img{
+    width: 80px;     
+}
+
+img{
+    width: 100%;
+    padding: 15px;
+}
+
+
+/* MAIN */
+main{
+    height: 100vh;
+    background-color: #1E2D3B;
+}
+
+.container-cards{
+    width: 200px;
+    height: 350px;
+    background-color: #2E3A46;  
+}
+
+/* CARDS */
+/* .card{
+    color: white;
+    text-align: center;
+} */
+
+/* .card img{
+    width: 200px;
+    padding: 10px;
+}
+
+h5{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+p{
+    color: grey;
+    margin-top: 20px;
+} */

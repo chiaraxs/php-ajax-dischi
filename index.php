@@ -37,21 +37,20 @@ include __DIR__ . "/database/data.php";
 
             <!-- php -->
             <?php
-            foreach ($disks as $disk) {
-                echo
-                "<div class='card text-center mb-3'>
-                    <div class='img'>
-                        <img class='img-fluid' src='{$disk['poster']}' >
+            foreach ($disks as $disk) { ?>
+                <div class="card text-center mb-3">
+                    <div class="img">
+                        <img class="img-fluid" src="<?php echo $disk['poster'] ?>">
                     </div>
                     <div class='text text-light'>
-                        <h5 class='text-uppercase fw-bold fs-6 mt-3'>{$disk['title']}</h5>
-                        <p class='text-secondary'>{$disk['author']} <br>
-                        {$disk['year']}</p>
+                        <h5 class='text-uppercase fw-bold fs-6 mt-3'> <?php echo $disk['title'] ?></h5>
+                        <p class='text-secondary'> <?php echo $disk['author'] ?><br>
+                        <?php echo $disk['year'] ?></p>
                     </div>
-                </div>";
-            }
-            ?>
+                </div>
+            <?php } ?>
             <!-- / php -->
+
         </div>
     </main>
     <!-- / MAIN -->
@@ -60,6 +59,8 @@ include __DIR__ . "/database/data.php";
 </body>
 
 </html>
+
+
 
 
 
